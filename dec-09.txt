@@ -1,0 +1,236 @@
+package demo;
+
+public class demo {
+
+	public static void main(String[] args) {
+		System.out.println(200+100+"\tshello"+500+20);
+		
+
+	}
+
+}
+Output:300	shello50020
+
+
+DATA TYPES
+
+package demo;
+
+public class demo {
+
+	public static void main(String[] args) {
+		//byte short int long
+		//float double
+		//char
+		//String
+		long num= 8309242822l;
+		char ch='A';
+		System.out.println(ch);
+
+	}
+
+}
+Output:A
+
+package demo;
+
+public class demo {
+
+	public static void main(String[] args) {
+		//byte short int long
+		//float double
+		//char
+		//String
+		long num= 8309242822l;
+		char ch='A';
+		System.out.println((int)ch);
+
+	}
+
+}
+Output:65
+
+package demo;
+
+public class demo {
+
+	public static void main(String[] args) {
+		//byte short int long
+		//float double
+		//char
+		//String
+		long num= 8309242822l;
+		char ch='a';
+		ch=(char)(ch-32);	[for lower case '-',for upper case '+'] 
+		System.out.println((int)ch-32);
+
+	}
+
+}
+Output:33
+
+package demo;
+
+public class demo {
+
+	public static void main(String[] args) {
+		int a=100,b=300,c=23,max,min;
+		if((a>b)&&(a>c)) {
+			max=a;
+		}
+		else if(b>c) {
+			max=b;
+		}
+		else {
+			max=c;
+		}
+		if((a>b)&&(a>c)) {
+			min=a;
+		}
+		else if(b>c) {
+			min=b;
+		}
+		else {
+			min=c;
+		}
+		System.out.println("Max-->"+max);
+		System.out.println("Min-->"+min);
+
+
+	}
+
+}
+Output:
+Max-->300
+Min-->300
+
+package demo;
+
+public class demo {
+
+	public static void main(String[] args) {
+		for(int i=1;i<=5;System.out.println("Welcome")) {
+				System.out.println(i);
+				i++;
+		}
+	}
+
+}
+Output:
+1
+Welcome
+2
+Welcome
+3
+Welcome
+4
+Welcome
+5
+Welcome
+
+
+Program
+package demo;
+
+public class demo {
+
+	public static void main(String[] args) {
+		int amount=8,c5=0,c2=0,c1=0;
+		if (amount>5) {
+			c5=1;
+			amount=amount-5;
+		}
+		if(amount>2) {
+			c2=1;
+			amount=amount-2;
+			
+		}
+		if(amount>0) {
+			c1=1;
+			//amount=amount-2
+		}
+		System.out.println("5 coins-->"+c5);
+		System.out.println("2 coins-->"+c2);
+		System.out.println("1 coins-->"+c1);
+
+	}
+
+}
+
+Output:
+5 coins-->1
+2 coins-->1
+1 coins-->1
+
+package demo;
+
+public class demo {
+
+	public static void main(String[] args) {
+		// /
+		// %
+		int amount=37,c5=0,c2=0,c1=0;
+		if (amount>5) {
+			c5=amount/5;
+			amount=amount-(c5*5);
+		}
+		if(amount>2) {
+			c2=amount/2;
+			amount=amount-(c2*2);
+			
+		}
+		if(amount>0) {
+			c1=amount/1;
+			//amount=amount-2
+		}
+		System.out.println("5 coins-->"+c5);
+		System.out.println("2 coins-->"+c2);
+		System.out.println("1 coins-->"+c1);
+
+	}
+
+}
+Output:
+5 coins-->7
+2 coins-->0
+1 coins-->2
+
+package demo;
+
+public class demo {
+
+	public static void main(String[] args) {
+		// /
+		// %
+		int amount=1657,n10=0,c5=0,c2=0,c1=0;
+		if (amount>10) {
+			n10=amount/10;
+			amount=amount-(n10*10);
+		}
+		if (amount>5) {
+			c5=amount/5;
+			amount=amount-(c5*5);
+		}
+		if(amount>2) {
+			c2=amount/2;
+			amount=amount-(c2*2);
+			
+		}
+		if(amount>0) {
+			c1=amount/1;
+			//amount=amount-2
+		}
+		System.out.println("10 note-->"+n10);
+		System.out.println("5 coins-->"+c5);
+		System.out.println("2 coins-->"+c2);
+		System.out.println("1 coins-->"+c1);
+
+	}
+
+}
+Output:
+10 note-->165
+5 coins-->1
+2 coins-->0
+1 coins-->2
+

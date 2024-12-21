@@ -1,0 +1,227 @@
+FUNCTIONS
+- 4 types of functions
+- must be return or not return
+1. input given but no output
+2. 
+3. input and
+4. will take no. of i/p and return 1 o/p
+
+
+public class func1 {
+	
+	static void design1() {
+		System.out.println("$$$$$$$$$$$$$$$$");
+		System.out.println("################");
+		System.out.println("@@@@@@@@@@@@@@@@");
+	}
+	static void design2() {
+		System.out.println("%%%%%%%%%%%%%%%%");
+		System.out.println("&&&&&&&&&&&&&&&&&");
+		System.out.println("!!!!!!!!!!!!!!!!!");
+
+	}
+
+	public static void main(String[] args) {
+		design1();
+		System.out.println("HEY");
+		design2();
+		
+		design1();
+		System.out.println("HII");
+		design2();
+		
+		design2();
+		System.out.println("SPEC");
+		design1();
+		
+		design1();
+		System.out.println("HYD");
+		design2();
+		
+		design1();
+		System.out.println("JAVA");
+		design2();
+		
+		design1();
+		System.out.println("FULL STACK");
+		design2();
+
+	}
+
+}
+
+O/P
+$$$$$$$$$$$$$$$$
+################
+@@@@@@@@@@@@@@@@
+HEY
+%%%%%%%%%%%%%%%%
+&&&&&&&&&&&&&&&&&
+!!!!!!!!!!!!!!!!!
+$$$$$$$$$$$$$$$$
+################
+@@@@@@@@@@@@@@@@
+HII
+%%%%%%%%%%%%%%%%
+&&&&&&&&&&&&&&&&&
+!!!!!!!!!!!!!!!!!
+%%%%%%%%%%%%%%%%
+&&&&&&&&&&&&&&&&&
+!!!!!!!!!!!!!!!!!
+SPEC
+$$$$$$$$$$$$$$$$
+################
+@@@@@@@@@@@@@@@@
+$$$$$$$$$$$$$$$$
+################
+@@@@@@@@@@@@@@@@
+HYD
+%%%%%%%%%%%%%%%%
+&&&&&&&&&&&&&&&&&
+!!!!!!!!!!!!!!!!!
+$$$$$$$$$$$$$$$$
+################
+@@@@@@@@@@@@@@@@
+JAVA
+%%%%%%%%%%%%%%%%
+&&&&&&&&&&&&&&&&&
+!!!!!!!!!!!!!!!!!
+$$$$$$$$$$$$$$$$
+################
+@@@@@@@@@@@@@@@@
+FULL STACK
+%%%%%%%%%%%%%%%%
+&&&&&&&&&&&&&&&&&
+!!!!!!!!!!!!!!!!!
+
+
+
+public class func2 {
+
+	
+	static void design1(char ch) {
+		
+		//System.out.println();
+		for(int i=1;i<10;i++) {
+			System.out.print(ch);
+		}
+		System.out.println();
+	}
+	
+	
+	public static void main(String[] args) {
+	
+		design1('*');
+		design1('-');
+		design1('.');
+		System.out.println("Hello");
+		design1('%');
+		design1('#');
+		design1('$');
+		
+		System.out.println("Welcome");
+		design1('*');
+		design1('-');
+		design1('.');
+		
+		System.out.println("Java");
+		design1('!');
+		design1('@');
+		design1('&');
+		
+		System.out.println("HYD");
+		design1('*');
+		design1('-');
+		design1('.');
+		
+		System.out.println("FSD");
+		
+		
+	}
+
+}
+
+o/p
+*********
+---------
+.........
+Hello
+%%%%%%%%%
+#########
+$$$$$$$$$
+Welcome
+*********
+---------
+.........
+Java
+!!!!!!!!!
+@@@@@@@@@
+&&&&&&&&&
+HYD
+*********
+---------
+.........
+FSD
+
+
+
+public class func3 {
+static float usDollar(){
+		
+		return 83.45f;
+	}
+	
+	static float ukPound(){
+		
+		return 120f;
+	}
+
+	public static void main(String[] args) {
+		int dollar = 100;
+		float rupees = usDollar() * dollar;
+		System.out.println(rupees);
+	}
+
+}
+
+o/p
+8345.0
+
+
+
+public class func4 {
+	static float convertcurrency(String country) {
+		float res=0;
+		if (country.contentEquals("USA")) {
+			res = 83.47f;
+		}
+		if (country.contentEquals("UK")) {
+			res = 120.47f;
+		}
+		if (country.contentEquals("CANADA")) {
+			res = 67.47f;
+		}
+		return res;
+	}
+
+	public static void main(String[] args) {
+		int dollar= 100;
+		float rupees;
+		rupees= convertcurrency("USA")*dollar;
+		System.out.println("USA TO INDIA"+rupees);
+		rupees= convertcurrency("UK")*dollar;
+		System.out.println("UK TO INDIA"+rupees);
+		rupees= convertcurrency("CANADA")*dollar;
+		System.out.println("CANADA TO INDIA"+rupees);
+		
+
+	}
+
+}
+O/P
+USA TO INDIA8347.0
+UK TO INDIA12047.0
+CANADA TO INDIA6747.0
+
+
+

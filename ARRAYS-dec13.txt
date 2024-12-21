@@ -1,0 +1,102 @@
+ARRAYS
+
+package arrays;
+
+import java.util.Scanner;
+
+public class arraydemo {
+
+	public static void main(String[] args) {
+		//read 10 from key board
+		int[] num;
+		Scanner sc= new Scanner(System.in);
+		System.out.println("enther size:");
+		int size=sc.nextInt();
+		num=new int[size];
+		for(int i=0;i<size;i++) {
+			System.out.println("Enter"+(i+1)+"number");
+			num[i]=sc.nextInt();
+		}
+		for(int i=0;i<size;i++ ) {
+			System.out.println(num[i]+" ");
+		}
+	}
+
+}
+
+
+o/p:
+enther size:
+4
+Enter1number
+3
+Enter2number
+ 4
+Enter3number
+5
+Enter4number
+6
+3 
+4 
+5 
+6 
+
+package arrays;
+
+public class Arraydemo2 {
+
+	public static void main(String[] args) {
+		int[] num = {10,2,3,67,55,4,76,22,43};
+		int max=num[0],min=num[0];
+		for(int a=1;a<num.length;a++) {
+			if(num[a]>max) {
+				max=num[a];
+			}
+			if(num[a]<min) {
+				min=num[a];
+			}
+		}
+		System.out.println("Max---->"+max);
+		System.out.println("Min---->"+min); 
+		
+	}
+
+}
+o/p:
+Max---->76
+Min---->2
+
+
+package arrays;
+
+import java.util.Scanner;
+
+public class arrayprob {
+
+	public static void main(String[] args) {
+		int[] num;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enetr the size:");
+		int size=sc.nextInt();
+		num= new int[size];
+		System.out.println("Enter all"+size+"numbers");
+		for(int p=0;p<size;p++) {
+			num[p]=sc.nextInt();
+		}
+		for(int i=0;i<num.length;i++) {
+			for(int j=i+1;j<num.length;j++) {
+				if(num[i]==num[j]) {
+					System.out.print(num[i]+" ");
+				}
+			}
+		}
+		
+	}
+
+}
+o/p
+Enetr the size:
+7
+Enter all7numbers
+3 4 6 5  1 3 4 5 
+3 4 

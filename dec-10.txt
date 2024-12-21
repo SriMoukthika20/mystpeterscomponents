@@ -1,0 +1,350 @@
+Data Type	Description
+byte	Stores whole numbers from -128 to 127
+short	Stores whole numbers from -32,768 to 32,767
+int	Stores whole numbers from -2,147,483,648 to 2,147,483,647
+long	Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+float	Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits
+double	Stores fractional numbers. Sufficient for storing 15 to 16 decimal digits
+boolean	Stores true or false values
+char	Stores a single character/letter or ASCII values
+
+
+package moukthika;
+
+public class moukthika {
+	public static void main(String[]args) {
+		int a;
+		int b;
+		int c;
+		int x=20,y=300,z=400;
+		byte d=12;
+		short s= 456;
+		long n= 876678865478l;
+		double f= 1.324;
+		char ch='h';
+		String name="Ramu";
+		Boolean res= true;
+		
+		System.out.println(res);
+		
+	}
+
+}
+Output:true
+
+package moukthika;
+
+public class datatypes {
+
+	public static void main(String[] args) {
+		int a=234,b=50;
+		double res;
+		res= a*1.0/b;
+		System.out.println(res);
+
+	}
+
+}
+Output:4.68
+
+package moukthika;
+
+public class dtwo {
+
+	public static void main(String[] args) {
+		// > < >= <= == !=
+		int a=100,b=200;
+		if(a>b)
+			System.out.println("A is big");
+		System.out.println("End");
+	}
+
+}
+Output:End
+
+Dead code is a section of code in a software program that is executed but not used, accessed, or referenced, and therefore serves no purpose. It's also known as "zombie code.programming that will never be executed during a program's runtime and thus serves no purpose in the program's functionality. In some cases, dead code can also refer to redundant code that may be executed during a program's runtime, but would have no impact on its processes or outputs.
+
+IF
+NESTED-IF
+
+
+
+package moukthika;
+
+public class dtwo {
+
+	public static void main(String[] args) {
+		// > < >= <= == !=
+		int a=100,b=200;
+		if(a>0)
+			System.out.println("A is +VE");
+		else {
+			System.out.println("A in -VE");
+		}
+	}
+
+}
+Output:A is +VE
+
+package moukthika;
+import java.util.Scanner;
+public class typeif {
+    public static void main(String[] args) {
+	
+		
+		Scanner xy = new Scanner(System.in);
+		System.out.println("enter char value");
+		char ch = xy.next().charAt(0);
+		
+		if((ch>='a')&&(ch<='z')) {
+			System.out.println("Yes its an alphabet");
+		}
+		else if((ch>='A')&&(ch<='Z')) {
+			System.out.println("Yes its an alphabet");
+		}
+		else {
+			System.out.println("Not alphabet");
+		}
+
+    }
+}
+Output:
+enter char value
+abc
+Yes its an alphabet
+
+package moukthika;
+import java.util.Scanner;
+public class typeif {
+    public static void main(String[] args) {
+	
+		
+		Scanner xy = new Scanner(System.in);
+		System.out.println("enter char value");
+		char ch = xy.next().charAt(0);
+		
+		if((ch>='0')&&(ch<='9')) {
+			System.out.println("Yes its a number");
+		}
+		else {
+			System.out.println("Not a number ");
+		}
+
+    }
+}
+Output:
+enter char value
+99999999
+Yes its a number
+
+LOOPS
+
+FIRST LOOP
+package projecttwo;
+
+public class abc {
+
+	public static void main(String[] args) {
+		//loops
+		//do .. while
+		//while
+		//for
+		
+		int i=1;
+		do {
+			System.out.println(i);
+			i++;
+		}while (i<=5);//2
+	}
+
+}
+Output:
+1
+2
+3
+4
+5
+
+package projecttwo;
+
+public class abc {
+
+	public static void main(String[] args) {
+		//loops
+		//do .. while
+		//while
+		//for
+		
+		for(int i=1;i<=5;System.out.println(i++));
+		
+		System.out.println("END");
+	}
+
+}
+Output:
+1
+2
+3
+4
+5
+END
+
+package projecttwo;
+
+public class abc {
+
+	public static void main(String[] args) {
+		
+		System.out.println(103/5);
+		System.out.println(103%5);	[remainder]
+
+	}
+
+}
+Output:
+20
+3
+
+package projecttwo;
+
+public class abc {
+
+	public static void main(String[] args) {
+		
+		System.out.println(103%5000);
+
+	}
+
+}
+Output:103
+
+package projecttwo;
+
+public class abc {
+
+	public static void main(String[] args) {
+		
+		int n=8907;
+		
+		
+		System.out.println(n%10);
+
+	}
+
+}
+Output:7
+
+package projecttwo;
+
+public class abc {
+
+	public static void main(String[] args) {
+		
+		int n=8907,rem;
+		while(1==1) {//true--infinite loop
+		rem=n%10;//7 890%10---0
+		
+		System.out.println(rem);//0
+		n=n/10;//890 89 8 0
+		if (n==0)break;
+		}
+	}
+
+}
+o/p
+7
+0
+9
+8
+
+package projecttwo;
+
+public class abc {
+
+	public static void main(String[] args) {
+		
+		int n=8907,rem,nn=0;
+		
+		//reverse number
+		//7098
+		//7*10+0------70 *10+9----709*10+8-----7098
+		while(n!=0) {
+		rem=n%10;
+		nn= nn *10+rem;
+		System.out.println(rem);
+		n=n/10;
+		
+		}
+		System.out.println("Reverse number--->"+nn);
+	}
+
+}
+o/p:
+7
+0
+9
+8
+Reverse number--->7098
+
+package projecttwo;
+
+public class abc {
+
+	public static void main(String[] args) {
+		
+		int n=8907,rem,nn=0;
+		//8
+		//9
+		//0
+		//7
+		
+		
+		while(n!=0) {
+		rem=n%10000;
+		nn= nn *10000+rem;
+		System.out.println(rem);
+		n=n/10000;
+		
+		}
+		System.out.println("Correct number--->"+nn);
+	}
+
+}
+o/p:
+8907
+Correct number--->8907
+
+package projecttwo;
+
+public class abc {
+
+	public static void main(String[] args) {
+		
+		int n=8907,rem,z=1,t;
+		//8
+		//3999
+		//7
+		//4069
+		t=n;
+		while(n!=0) {
+			n=n/10;
+			z=z*10;
+		}
+		z=z/10;
+		n=t;
+		while(n!=0) {
+			rem=n/z;
+			n=n%z;
+			z=z/10;
+			
+			System.out.println(rem);
+		}
+		
+	}
+
+}
+o/p:
+8
+9
+0
+7

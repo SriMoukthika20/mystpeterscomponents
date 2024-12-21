@@ -1,0 +1,243 @@
+
+public class demo5 {
+
+	public static void main(String[] args) {
+		
+		//readonly
+		//Immutable
+		String data1="Hello";
+		String data2= "Welcome";
+		
+		
+		if (data1==data2) {
+			System.out.println("Same");
+		}
+		else {
+			System.out.println("Not same");
+		}
+		String data3= new String ("Hey");
+		String data4= new String("Hey");
+		
+		
+		if (data3==data4) {
+			System.out.println("Same");
+		}
+		else {
+			System.out.println("Not same");
+		}
+	}
+
+}
+o/p:
+Not same
+Not same
+
+
+import java.util.Scanner;
+public class Strpolindrome {
+	public static void main(String[] args) {
+		// Check Given String is Polyndrome or not
+		// excample 13331--- Yes
+		// level---- yes
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter data");
+		String data = sc.next();
+		char ch;
+		String newStr = "";
+		for(int i=data.length()-1;i>=0;i--) {
+			 ch = data.charAt(i);
+			 newStr = newStr +ch;
+		}
+		System.out.println("data from keyboard ---->"+data);
+		System.out.println("new Str ---->"+newStr);
+		if(data.contentEquals(newStr) == true) {
+			System.out.println("Polyndrome");
+		}
+		else {
+		System.out.println("Not");
+		}
+		sc.close();
+	}
+}
+
+o/p:
+enter data
+Moukthika
+data from keyboard ---->Moukthika
+new Str ---->akihtkuoM
+Not
+
+
+import java.util.Scanner;
+
+public class anagram {
+
+	public static void main(String[] args) {
+		//check whether two strings are anagram
+		//listen
+		//silent
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter 2 strings");
+		String str1= sc.next();
+		String str2= sc.next();
+		sc.close();
+		char eachCh= ' ';
+		
+		//listen
+		//silent
+		boolean isAnagram=false;
+		if (str1.length()==str2.length()) {
+			for (int i=0;i<str1.length();i++) {
+				eachCh=str1.charAt(i);
+				if(isCharThere (str2,eachCh)==true) {
+					isAnagram=true;
+					
+				}
+				else {
+					isAnagram=false;
+					break;
+				}
+		}
+			
+		}
+		if(isAnagram==true)System.out.println("Yes it is anagram");
+		else System.out.println("Not anagram");
+	}
+
+	private static boolean isCharThere(String str2, char eachCh) {
+		char localCh=' ';
+		for(int i=0;i<str2.length();i++) {
+			localCh=str2.charAt(i);
+			if(localCh==eachCh) {
+				return true;
+			}
+		}
+		return false;
+	}
+}
+
+o/p:
+Enter 2 strings
+array
+raray
+Yes it is anagram
+
+
+import java.util.Scanner;
+
+public class anagram {
+
+	public static void main(String[] args) {
+		//check whether two strings are anagram
+		//listen
+		//silent
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter 2 strings");
+		String str1= sc.next();
+		String str2= sc.next();
+		sc.close();
+		char eachCh= ' ';
+		
+		//listen
+		//silent
+		boolean isAnagram=false;
+		if (str1.length()==str2.length()) {
+			for (int i=0;i<str1.length();i++) {
+				eachCh=str1.charAt(i);
+				if(isCharThere (str2,eachCh)==true) {
+					isAnagram=true;
+					
+				}
+				else {
+					isAnagram=false;
+					break;
+				}
+		}
+			
+		}
+		if(isAnagram==true)System.out.println("Yes it is anagram");
+		else System.out.println("Not anagram");
+	}
+
+	private static boolean isCharThere(String str2, char eachCh) {
+		char localCh=' ';
+		for(int i=0;i<str2.length();i++) {
+			localCh=str2.charAt(i);
+			if(localCh==eachCh) {
+				return true;
+			}
+		}
+		return false;
+	}
+}
+
+o/p:
+Enter 2 strings
+imfearless
+lesserafim
+Yes it is anagram
+
+import java.util.Scanner;
+public class avagramver2 {
+	public static void main(String[] args) {
+		//check whether two strings are anagram
+		//listen
+		//silent
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter 2 strings");
+		String str1= sc.next();
+		String str2= sc.next();
+		sc.close();
+		char eachCh= ' ';		
+		//listen
+		//silent
+		boolean isAnagram=true;
+		if (str1.length()==str2.length()) {
+			for (int i=0;i<str1.length();i++) {
+				eachCh=str1.charAt(i);
+				if(isCharThere (str2,eachCh)==false) {
+					isAnagram=false;
+					break;
+				}
+				else {
+					isAnagram=true;
+					break;
+				}
+		}
+		}
+		if(isAnagram==false)System.out.println("Yes it is anagram");
+		else System.out.println("Not anagram");
+	}
+	private static boolean isCharThere(String str2, char eachCh) {
+		char localCh=' ';
+		for(int i=0;i<str2.length();i++) {
+			localCh=str2.charAt(i);
+			if(localCh==eachCh) {
+				return false;
+			}
+		}
+		return true;
+	}
+}
+o/p:(same as the above)
+
+
+public class demoweight {
+
+	public static void main(String[] args) {
+		String str="sree";
+		String str1="ster";
+		int w=0,w1=0;
+		for(int i=0;i<str.length();i++) {
+			w= w+ str.charAt(i);
+			
+		}
+		for(int i=0;i<str1.length();i++) {
+			w1= w1+ str1.charAt(i);
+			
+
+		}
+	}
+
+}
+o/p:

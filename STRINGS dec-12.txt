@@ -1,0 +1,141 @@
+STRINGS
+
+import java.util.Scanner;
+
+public class demo1 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter 2 names");
+		String name1= sc.next();
+		String name2= sc.next();
+		System.out.println("Before swapping");
+		System.out.println("NAME 1:"+name1);
+		System.out.println("NAME 2:"+name2);
+		name1=name1+name2;
+		name2=name1.substring(0,name1.length()-name2.length());
+		name1=name1.substring(name2.length());
+		System.out.println("After swapping");
+		System.out.println("Name1:"+name1);
+		System.out.println("Name2:"+name2);
+		}
+
+}
+
+O/P:
+Enter 2 names
+gundu
+sri
+Before swapping
+NAME 1:gundu
+NAME 2:sri
+After swapping
+Name1:sri
+Name2:gundu
+
+
+public class demo2 {
+
+	public static void main(String[] args) {
+		String str="Welcome to Java World. Do not laugh. someone is monitoring you.";
+		System.out.println(str.length());
+		for (int i=0;i<str.length();i++){
+		char ch=str.charAt(i);
+			System.out.print(ch);
+		}
+		
+	}
+
+}
+o/p:
+63
+Welcome to Java World. Do not laugh. someone is monitoring you.
+
+public class demo3 {
+
+	public static void main(String[] args) {
+		//String str = "Welcome to Java World. do not laugh. some One Monotoring You";
+		
+		// Welcome to java world. Do not laugh. Some one monotoring you
+		
+		String name = "ramu";
+		// RAMU
+		
+		char ch = name.charAt(0);
+		int diff = (int)('d'-'D');
+		
+		diff = diff<0?-1 * diff:diff;
+		
+		if(ch >='a' && ch <='z') {
+			ch = (char)(ch -diff);
+		}
+		System.out.println(ch);
+		
+		
+		
+	}
+
+}
+o/p:
+R
+
+
+public class demo4 {
+
+	public static void main(String[] args) {
+		String name="Ramu";
+		//RAMU
+		char ch= name.charAt(0);
+		int diff=(int)('d'-'D');
+		diff= diff<0?-1*diff:diff;
+		if (ch>='a' && ch<='z') {
+			ch=(char)(ch-diff);
+		}
+		System.out.println(ch);
+		String resStr="";
+		for(int i=0;i<name.length();i++) {
+		ch=name.charAt(i);
+		if (ch>='a' && ch <='z') {
+			ch=(char)(ch-diff);
+		}
+		resStr=resStr+ch;
+		}
+		System.out.println("res--->"+resStr);	
+		
+	}
+
+}
+o/p:
+R
+res--->RAMU
+
+
+import java.util.Scanner;
+
+public class demo3 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("enter name");
+		String name = sc.next();
+		
+		char ch;
+		int diff = (int)('d'-'D');
+		diff = diff<0?-1 * diff:diff;
+		String resStr = "";
+		for(int i=0;i<name.length();i++) {
+			 ch = name.charAt(i);
+			 if(ch >='a' && ch <='z') {
+				 ch = (char)(ch -diff);
+			 }//if
+			 resStr = resStr+ch;
+		}// for
+		System.out.println("res---->"+resStr);
+
+	}
+
+}
+o/p:
+enter name
+moukthika
+res---->MOUKTHIKA

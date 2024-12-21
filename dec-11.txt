@@ -1,0 +1,177 @@
+package projecttwo;
+import java.util.Scanner;
+
+public class abcc {
+
+	public static void main(String[] args) {
+		//for given no 568923---replace if no is 9 by 3
+		
+		int r,p=1,res=0;
+		Scanner sc= new Scanner (System.in);
+		System.out.println("Enter number");
+		int n = sc.nextInt();
+		
+		
+		while(n!=0) {
+			r=n%10;//568923%10---3
+			if(r==9) r=3;
+			n=n/10;//568923/10----5689
+			res = res +r*p;
+			p=p*10;
+		//if (n==0) break;
+		}
+		System.out.println(res);
+	}
+
+}
+o/p:
+Enter number
+19875
+13875
+
+
+package projecttwo;
+
+import java.util.Scanner;
+
+public class addno {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int n,l,index=0,p=1,res=0;
+		System.out.println("Enter number");
+		n=sc.nextInt();
+		
+		while(n!=0) {
+			l=n%10;
+			n=n/10;
+			index++;
+			if (index==2) {
+				l=l+7;
+					
+			}
+			res=res+l*p;
+			p=p*10;
+		}
+		System.out.println(res);
+	}
+
+}
+o/p:
+Enter number
+1988
+2058
+
+
+package projecttwo;
+
+import java.util.Scanner;
+
+public class addno {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int n,l,c=0,index=0,p=1,res=0;
+		System.out.println("Enter number");
+		n=sc.nextInt();
+		
+		while(n!=0) {
+			l=n%10;
+			n=n/10;
+			index++;
+			l=l+c;
+			if (index==2) {
+				l=l+7;
+					
+			}
+			if (l>=10) {
+				c=l/10;
+				l=l%10;
+				
+			}
+			res=res+l*p;
+			p=p*10;
+		}
+		System.out.println("C--->"+c);
+		if(c>10) {
+			res=c*p+res;
+		}
+		System.out.println(res);
+	}
+
+}
+o/p:
+Enter number
+765
+C--->1
+835
+
+package projecttwo;
+
+public class prog {
+
+	public static void main(String[] args) {
+		
+		//print 2 times hello
+		//print 3 times welcome
+		//print 5 times hyderabad
+		//in a single loop 
+		
+		for (int i = 1; i <= 10; i++) {
+            if (i <= 2) {
+                System.out.println("Hello");
+            } 
+            else if (i <= 5) {
+                System.out.println("Welcome");
+            } 
+            else {
+                System.out.println("Hyderabad");
+            }
+		}
+	}
+
+}
+o/p:
+Hello
+Hello
+Welcome
+Welcome
+Welcome
+Hyderabad
+Hyderabad
+Hyderabad
+Hyderabad
+Hyderabad
+
+
+package projecttwo;
+
+import java.util.Scanner;
+
+public class primenum {
+	public static boolean isPrime (int n) {
+		int i=2;
+		for(;i<n/2 && (n%i!=0);i++) ;
+			if((n/2)==i)return true;
+			else return false;
+	}
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter num:");
+		int n= sc.nextInt();
+		if(isPrime(n)==true)
+			System.out.println("Prime");
+		else
+			System.out.println("Not Prime");
+
+		
+	}
+
+}
+o/p:
+Enter num:
+59
+Prime
